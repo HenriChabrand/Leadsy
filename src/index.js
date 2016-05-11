@@ -80,7 +80,7 @@ controller.hears(['.*'], ['direct_message', 'direct_mention', 'mention', 'ambien
     try {
         if (message.type == 'message') {
             
-            console.log("user : ", message.user);
+            console.log("message : ", message);
             if (message.user == bot.identity.id) {
                 // message from bot can be skipped
             }
