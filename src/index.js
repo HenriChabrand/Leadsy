@@ -75,7 +75,7 @@ function isDefined(obj) {
     return obj != null;
 }
 
-controller.hears(['.*'], ['direct_message', 'direct_mention', 'mention', 'ambient'], function (bot, message) {
+controller.hears(['.*'], ['file_shared','direct_message', 'direct_mention', 'mention', 'ambient'], function (bot, message) {
     console.log(message);
     try {
         
