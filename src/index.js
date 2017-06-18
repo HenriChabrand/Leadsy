@@ -76,8 +76,9 @@ function isDefined(obj) {
 }
 
 controller.hears(['.*'], ['direct_message', 'direct_mention', 'mention', 'ambient'], function (bot, message) {
-
+    console.log(message);
     try {
+        
         if (message.type == 'message') {
             
             console.log("message : ", message);
